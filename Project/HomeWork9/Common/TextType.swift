@@ -3,8 +3,6 @@
 //  HomeWork9
 //
 
-//
-
 import Foundation
 
 enum TextType {

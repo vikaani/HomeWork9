@@ -3,21 +3,19 @@
 //  HomeWork9
 //
 
-//
-
 import UIKit
 
-protocol TextStyleProtocol {}
+protocol TextStyleProtocol {
+    func textColor(for type: TextType) -> UIColor
+}
 
 extension TextStyleProtocol {
-    
     func textColor(for type: TextType) -> UIColor {
         return .green
     }
 }
 
-class TextStyle : TextStyleProtocol {
-    
+class TextStyle: TextStyleProtocol {
     func textColor(for type: TextType) -> UIColor {
         
         switch type {
